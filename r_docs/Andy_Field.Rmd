@@ -1,0 +1,24 @@
+---
+title: "Andy Field's tutorial"
+author: "Reddy Lee"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = F, warning = F)
+```
+
+# This is a plot of some built in data
+
+```{r}
+plot(pressure)
+```
+
+# This is a plot of some built in data
+
+```{r}
+my_data <- readr::read_csv("../data/mtcars.csv")
+View(my_data)
+```
+
