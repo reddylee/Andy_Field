@@ -7,6 +7,8 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message = F, warning = F)
+library(tidyverse)
+library(here)
 ```
 
 # This is a plot of some built in data
@@ -18,7 +20,8 @@ plot(pressure)
 # This is a plot of some built in data
 
 ```{r}
-my_data <- readr::read_csv("../data/mtcars.csv")
-View(my_data)
+my_data <- readr::read_csv()
+my_data
 ```
+
 
